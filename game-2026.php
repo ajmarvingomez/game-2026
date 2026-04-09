@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name:       Game 2026
  * Description:       This is a game built with Wordpress as the principle cms to manage
@@ -13,9 +14,13 @@
  * @package Game_2026
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
+
+include plugin_dir_path(__FILE__) . 'inc/cpt.php';
+
+include plugin_dir_path(__FILE__) . 'inc/custom_fields.php';
 /**
  * Registers the block(s) metadata from the `blocks-manifest.php` and registers the block type(s)
  * based on the registered block metadata. Behind the scenes, it registers also all assets so they can be enqueued
@@ -24,7 +29,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://make.wordpress.org/core/2025/03/13/more-efficient-block-type-registration-in-6-8/
  * @see https://make.wordpress.org/core/2024/10/17/new-block-type-registration-apis-to-improve-performance-in-wordpress-6-7/
  */
-function game_2026_game_2026_block_init() {
-	wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
+function game_2026_game_2026_block_init()
+{
+	wp_register_block_types_from_metadata_collection(__DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php');
 }
-add_action( 'init', 'game_2026_game_2026_block_init' );
+add_action('init', 'game_2026_game_2026_block_init');
