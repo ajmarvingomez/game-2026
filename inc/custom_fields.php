@@ -22,6 +22,16 @@ function game_2026_register_stats_meta()
 }
 add_action('init', 'game_2026_register_stats_meta');
 
+function game_2026_register_selected_armor_meta()
+{
+    register_post_meta('monster', 'game_2026_selected_armor', array(
+        'type' => 'integer',
+        'single' => true,
+        'show_in_rest' => true,
+    ));
+}
+add_action('init', 'game_2026_register_selected_armor_meta');
+
 function game_2026_register_base_ac_meta()
 {
     register_post_meta('armor', 'game_2026_base_ac', array(
