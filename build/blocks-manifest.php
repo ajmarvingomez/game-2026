@@ -1,6 +1,32 @@
 <?php
 // This file is generated. Do not modify it manually.
 return array(
+	'armor-class' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'game-2026/game-2026-ac',
+		'version' => '0.1.0',
+		'title' => 'Game 2026 AC',
+		'category' => 'widgets',
+		'icon' => 'smiley',
+		'description' => 'Armor Class',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'usesContext' => array(
+			'postType',
+			'postId'
+		),
+		'textdomain' => 'game-2026',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php',
+		'viewScript' => 'file:./view.js'
+	),
 	'game-2026' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
