@@ -21,3 +21,13 @@ function game_2026_register_stats_meta()
     }
 }
 add_action('init', 'game_2026_register_stats_meta');
+
+function game_2026_register_base_ac_meta()
+{
+    register_post_meta('armor', 'game_2026_base_ac', array(
+        'type' => 'integer',
+        'single' => true,
+        'show_in_rest' => true,
+    ));
+}
+add_action('init', 'game_2026_register_base_ac_meta');
