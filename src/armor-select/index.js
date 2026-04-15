@@ -11,7 +11,7 @@ registerBlockType( metadata.name, {
 	edit: ( { setAttributes, attributes, context: { postID, postType } } ) => {
 		const blockProps = useBlockProps();
 		const [ meta, setMeta ] = useEntityProp( 'postType', postType, 'meta' );
-        const selectedArmor = meta[ 'game_2026_selected_armor' ];
+
         const { armors, hasResolved } = useSelect( ( select ) => {
             return {
                 armors: select( coreDataStore ).getEntityRecords( 'postType', 'armor' ),
@@ -23,6 +23,7 @@ registerBlockType( metadata.name, {
 	    }, [] );
         // console.log(armors)
         const armorOptions = armors ? armors.map( ( armor ) => ( { label: armor.title.rendered, value: armor.id } ) ) : [];
+        const selectedArmor = meta[ 'game_2026_selected_armor' ];
 
 		return (
             <div { ...blockProps }>
