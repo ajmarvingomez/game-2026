@@ -27,6 +27,84 @@ return array(
 		'render' => 'file:./render.php',
 		'viewScript' => 'file:./view.js'
 	),
+	'armor-select' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'game-2026/game-2026-armor-select',
+		'version' => '0.1.0',
+		'title' => 'Game 2026 Armor Select',
+		'category' => 'widgets',
+		'icon' => 'smiley',
+		'description' => 'Select Armor',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'usesContext' => array(
+			'postType',
+			'postId'
+		),
+		'textdomain' => 'game-2026',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php',
+		'viewScript' => 'file:./view.js'
+	),
+	'base-ac' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'game-2026/game-2026-base-ac',
+		'version' => '0.1.0',
+		'title' => 'Game 2026 Base AC',
+		'category' => 'widgets',
+		'icon' => 'smiley',
+		'description' => 'Base Armor Class',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'usesContext' => array(
+			'postType',
+			'postId'
+		),
+		'textdomain' => 'game-2026',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php',
+		'viewScript' => 'file:./view.js'
+	),
+	'dexterity-modifier' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'game-2026/game-2026-dexterity-modifier',
+		'version' => '0.1.0',
+		'title' => 'Game 2026 Dexterity Modifier',
+		'category' => 'widgets',
+		'icon' => 'smiley',
+		'description' => 'Dexterity Modifier',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'usesContext' => array(
+			'postType',
+			'postId'
+		),
+		'textdomain' => 'game-2026',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php',
+		'viewScript' => 'file:./view.js'
+	),
 	'game-2026' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
