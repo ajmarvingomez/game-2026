@@ -1,24 +1,21 @@
 {
-    "$schema": "https://schemas.wp.org/trunk/block.json",
-    "apiVersion": 3,
-    "name": "game-2026/game-2026-base-ac",
-    "version": "0.1.0",
-    "title": "Game 2026 Base AC",
-    "category": "widgets",
-    "icon": "smiley",
-    "description": "Base Armor Class",
-    "example": {},
-    "supports": {
-        "html": false
-    },
-    "usesContext": [
-        "postType",
-        "postId"
-    ],
-    "textdomain": "game-2026",
-    "editorScript": "file:./index.js",
-    "editorStyle": "file:./index.css",
-    "style": "file:./style-index.css",
-    "render": "file:./render.php",
-    "viewScript": "file:./view.js"
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "game-2026/game-2026-base-ac",
+	"version": "0.1.0",
+	"title": "Game 2026 Base AC",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Base Armor Class",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"usesContext": [ "postType", "postId" ],
+	"textdomain": "game-2026",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
 }

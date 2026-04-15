@@ -14,13 +14,13 @@ registerBlockType( metadata.name, {
 		return (
 			<div { ...blockProps }>
 				<NumberControl
-                    __next40pxDefaultSize
-                    label="Base AC"
-                    value={ baseAC ? baseAC : 11 }
-                    onChange={( newValue ) => {
-                        setMeta( { ...meta, game_2026_base_ac: newValue } )
-                    }}
-                    />
+					__next40pxDefaultSize
+					label="Base AC"
+					value={ baseAC ? baseAC : 11 }
+					onChange={ ( newValue ) => {
+						setMeta( { ...meta, game_2026_base_ac: newValue } );
+					} }
+				/>
 			</div>
 		);
 	},
